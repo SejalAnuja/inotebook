@@ -1,6 +1,3 @@
-// 'mongodb+srv://anujasejal:<db_password>@cluster0.xqaqpk8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
-// '2Rzo69JN2Gz8cSmF'
-
 const mongoose = require("mongoose");
 
 const connectToMongo = async () => {
