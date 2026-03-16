@@ -14,6 +14,9 @@ app.use(express.json());
 app.use('/api/auth',require('./routes/auth'));
 app.use('/api/notes',require('./routes/notes'));
 console.log("Mongo URI:", process.env.MONGO_URI);
+app.get("/", (req, res) => {
+  res.send("iNotebook backend is running 🚀");
+});
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
